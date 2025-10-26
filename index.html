@@ -9,54 +9,43 @@
       --bg:#f6fbff; --card:#ffffff; --accent:#0a63b7; --muted:#666;
       --correct:#d4f7dc; --wrong:#ffd6d6; --border:#e6eefc;
     }
-    body{
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background: linear-gradient(180deg, #eef7ff 0%, var(--bg) 100%);
-      margin:0; padding:24px; color:#0b2340;
-    }
-    .container{ max-width:1024px; margin:0 auto; }
-    header{ display:flex; align-items:center; gap:16px; margin-bottom:18px; }
-    header h1{ margin:0; font-size:20px; letter-spacing: -0.3px; }
-    header p{ margin:0; color:var(--muted); font-size:13px; }
-    .card{ background:var(--card); border:1px solid var(--border); border-radius:12px; padding:18px; box-shadow:0 6px 20px rgba(10,60,120,0.04); }
-    .meta{ display:flex; gap:12px; align-items:center; margin-bottom:14px; }
-    .meta .badge{ background:linear-gradient(90deg,#e7f1ff,#f0f6ff); color:var(--accent); padding:6px 10px; border-radius:999px; font-weight:600; font-size:13px; }
-    .question{ margin:12px 0; padding:12px; border-radius:8px; border:1px solid transparent; }
-    .qhead{ display:flex; justify-content:space-between; align-items:center; gap:12px; }
-    .qnum{ font-weight:700; color:var(--accent); }
-    .qtext{ margin-top:6px; color:#122238; }
-    .options{ margin-top:10px; display:flex; flex-direction:column; gap:8px; }
-    label.option{ display:flex; gap:10px; align-items:center; background:#fbfdff; padding:10px; border-radius:8px; cursor:pointer; border:1px solid #f0f6ff; }
-    input[type="radio"]{ width:16px; height:16px; }
-    .controls{ display:flex; gap:10px; margin-top:18px; align-items:center; }
-    button{ background:var(--accent); color:white; border:0; padding:10px 14px; border-radius:8px; cursor:pointer; font-weight:700; }
-    button.secondary{ background:transparent; color:var(--accent); border:1px solid var(--border); font-weight:600; }
-    .results{ margin-top:18px; padding:12px; border-radius:8px; background:#fbfbff; border:1px dashed var(--border); }
-    .correct{ background:var(--correct); border:1px solid #a6e6b6; }
-    .wrong{ background:var(--wrong); border:1px solid #ffc4c4; }
-    .answerKey{ font-size:13px; color:#07294a; font-weight:700; }
-    .reveal{ margin-top:10px; color:var(--muted); font-size:13px; }
-    .scoreBox{ display:flex; gap:12px; align-items:center; }
-    .scoreNum{ font-size:20px; font-weight:800; color:var(--accent); }
-    footer{ margin-top:26px; color:var(--muted); font-size:13px; text-align:center; }
-    .hint{ margin-top:8px; color:#0c3f70; font-size:13px; }
-    .small{ font-size:13px; color:var(--muted); }
-    .question.correct { border-color:#bfe9c7; box-shadow:0 2px 6px rgba(5,130,72,0.04); }
-    .question.wrong { border-color:#f6c6c6; box-shadow:0 2px 6px rgba(220,50,50,0.04); }
-    .legend{ display:flex; gap:12px; margin-top:10px; align-items:center; }
-    .legend b{ display:inline-block; width:14px; height:14px; border-radius:3px; }
-    .legend span{ font-size:12px; color:var(--muted); }
-    @media (max-width:640px){
-      body{ padding:12px; }
-    }
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#eef7ff 0%,var(--bg) 100%);margin:0;padding:24px;color:#0b2340;}
+    .container{max-width:1024px;margin:0 auto;}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:18px;}
+    header h1{margin:0;font-size:20px;letter-spacing:-0.3px;}
+    header p{margin:0;color:var(--muted);font-size:13px;}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px;box-shadow:0 6px 20px rgba(10,60,120,0.04);}
+    .meta{display:flex;gap:12px;align-items:center;margin-bottom:14px;}
+    .meta .badge{background:linear-gradient(90deg,#e7f1ff,#f0f6ff);color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px;}
+    .question{margin:12px 0;padding:12px;border-radius:8px;border:1px solid transparent;}
+    .qhead{display:flex;justify-content:space-between;align-items:center;gap:12px;}
+    .qnum{font-weight:700;color:var(--accent);}
+    .qtext{margin-top:6px;color:#122238;}
+    .options{margin-top:10px;display:flex;flex-direction:column;gap:8px;}
+    label.option{display:flex;gap:10px;align-items:center;background:#fbfdff;padding:10px;border-radius:8px;cursor:pointer;border:1px solid #f0f6ff;}
+    input[type="radio"]{width:16px;height:16px;}
+    .controls{display:flex;gap:10px;margin-top:18px;align-items:center;}
+    button{background:var(--accent);color:white;border:0;padding:10px 14px;border-radius:8px;cursor:pointer;font-weight:700;}
+    button.secondary{background:transparent;color:var(--accent);border:1px solid var(--border);font-weight:600;}
+    .results{margin-top:18px;padding:12px;border-radius:8px;background:#fbfbff;border:1px dashed var(--border);}
+    .correct{background:var(--correct);border:1px solid #a6e6b6;}
+    .wrong{background:var(--wrong);border:1px solid #ffc4c4;}
+    .answerKey{font-size:13px;color:#07294a;font-weight:700;}
+    .reveal{margin-top:10px;color:var(--muted);font-size:13px;}
+    .scoreBox{display:flex;gap:12px;align-items:center;}
+    .scoreNum{font-size:20px;font-weight:800;color:var(--accent);}
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center;}
+    .hint{margin-top:8px;color:#0c3f70;font-size:13px;}
+    .small{font-size:13px;color:var(--muted);}
+    @media(max-width:640px){body{padding:12px;}}
   </style>
 </head>
 <body>
   <div class="container">
     <header>
       <div class="card" style="padding:12px;">
-        <div style="display:flex; align-items:center; gap:12px;">
-          <img src="https://share.google/images/yifbeTdHCbpWmxPre" alt="" style="width:44px;height:44px;border-radius:8px;background:linear-gradient(90deg,#e6f2ff,#ffffff);display:inline-block">
+        <div style="display:flex;align-items:center;gap:12px;">
+          <img src="https://share.google/images/eQlzwASqfbXC9EWnH" alt="jutechs.png" style="width:44px;height:44px;border-radius:8px;background:linear-gradient(90deg,#e6f2ff,#ffffff)">
           <div>
             <h1>Jutechs — Full-Stack Developer Quiz</h1>
             <p class="small">50 multiple-choice questions • KES 5 per correct answer • Passing = 60%</p>
@@ -81,36 +70,19 @@
       </div>
 
       <div id="resultArea" class="results" style="display:none"></div>
-
-      <div class="hint">
-        Tip: Answer all questions. If you score below passing, correct answers will be shown for each question.
-      </div>
-
-      <div class="legend">
-        <div style="display:flex;align-items:center;gap:6px"><b style="background:var(--correct)"></b><span>Correct</span></div>
-        <div style="display:flex;align-items:center;gap:6px"><b style="background:var(--wrong)"></b><span>Wrong</span></div>
-      </div>
+      <div class="hint">Tip: Answer all questions. If you score below passing, correct answers will be shown.</div>
     </main>
 
-    <footer>
-      <div>Built for quick assessment — front-end only. Save this file and open in a browser to run.</div>
-    </footer>
+    <footer>Built for quick assessment — frontend only. Save this file and open in a browser to run.</footer>
   </div>
 
-  <script>
-    /*************************************************************************
-     * Single-file Frontend Quiz App
-     * - 50 questions
-     * - 4 options each
-     * - 5 KES per correct answer
-     * - Passing threshold = 60% (can be adjusted)
-     * - If user fails (score < passThreshold), show the correct answer for each question
-     *************************************************************************/
-
-    // CONFIG
-    const POINTS_PER_CORRECT = 5;          // KES per correct answer
-    const PASS_PERCENT = 60;               // percent threshold to pass
-    const QUESTIONS = [
+<script>
+/*───────────────────────────────────────────────*
+ | Full-Stack Developer Quiz (v2 – Certificate) |
+ *───────────────────────────────────────────────*/
+const POINTS_PER_CORRECT = 5;
+const PASS_PERCENT = 60;
+const QUESTIONS = [
       // 50 questions start here (topic: full-stack fundamentals)
       { q: "What does HTML stand for?", options:["Hyper Text Markup Language","Home Tool Markup Language","Hyperlink Text Marking Language","Hyper Transfer Markup Language"], correct:0 },
       { q: "Which HTML element is used to create a hyperlink?", options:["<a>","<link>","<href>","<url>"], correct:0 },
@@ -178,372 +150,95 @@
       { q: "Which of these folders commonly contains static front-end assets in many frameworks?", options:["public","private","server","config"], correct:0 },
       { q: "Which technique is best to store passwords securely?", options:["Hashing with salt","Storing plain text","Encrypting with reversible keys","Sending to client"], correct:0 }
     ];
-    // End QUESTIONS array (should be exactly 50)
+const TOTAL_QUESTIONS = QUESTIONS.length;
+const TOTAL_POINTS = POINTS_PER_CORRECT * TOTAL_QUESTIONS;
+const PASS_COUNT = Math.ceil(TOTAL_QUESTIONS * PASS_PERCENT / 100);
+const POINTS_TO_PASS = PASS_COUNT * POINTS_PER_CORRECT;
 
-    // Some sanity checks and derived values (compute carefully)
-    const TOTAL_QUESTIONS = QUESTIONS.length;               // number of questions
-    // Step-by-step arithmetic to avoid mistakes (per instruction):
-    // 1) Points per correct = POINTS_PER_CORRECT
-    // 2) Max correct possible = TOTAL_QUESTIONS
-    // 3) Total points possible = POINTS_PER_CORRECT * TOTAL_QUESTIONS
-    const TOTAL_POINTS = POINTS_PER_CORRECT * TOTAL_QUESTIONS; // e.g., 5 * 50 = 250
-    // 4) Passing count (number of correct answers required) = ceil(TOTAL_QUESTIONS * PASS_PERCENT/100)
-    const PASS_COUNT = Math.ceil(TOTAL_QUESTIONS * PASS_PERCENT / 100); // e.g., ceil(50*0.6)=30
-    // 5) Points to pass = PASS_COUNT * POINTS_PER_CORRECT
-    const POINTS_TO_PASS = PASS_COUNT * POINTS_PER_CORRECT;
+const quizContainer = document.getElementById("quizContainer");
+const totalPointsSpan = document.getElementById("totalPoints");
+const passPercentSpan = document.getElementById("passPercent");
+const submitBtn = document.getElementById("submitBtn");
+const resetBtn = document.getElementById("resetBtn");
+const resultArea = document.getElementById("resultArea");
 
-    // UI elements
-    const quizContainer = document.getElementById('quizContainer');
-    const totalPointsSpan = document.getElementById('totalPoints');
-    const passPercentSpan = document.getElementById('passPercent');
-    const submitBtn = document.getElementById('submitBtn');
-    const resetBtn = document.getElementById('resetBtn');
-    const resultArea = document.getElementById('resultArea');
+totalPointsSpan.textContent = TOTAL_POINTS;
+passPercentSpan.textContent = PASS_PERCENT + "%";
 
-    // Insert total points & pass percent
-    totalPointsSpan.textContent = TOTAL_POINTS.toString();
-    passPercentSpan.textContent = PASS_PERCENT + '%';
+function escapeHtml(t){return t.replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]))}
+function renderQuiz(){
+  quizContainer.innerHTML="";
+  QUESTIONS.forEach((item,i)=>{
+    const q=document.createElement("div");
+    q.className="question card";q.id="q-"+i;
+    q.innerHTML=`<div class="qhead"><div class="qnum">Q${i+1}</div><div class="small">Worth: KES ${POINTS_PER_CORRECT}</div></div>
+                 <div class="qtext"><strong>${escapeHtml(item.q)}</strong></div>
+                 <div class="options">${
+                   item.options.map((opt,oi)=>`<label class="option"><input type="radio" name="q${i}" value="${oi}"/> ${escapeHtml(opt)}</label>`).join("")
+                 }</div>`;
+    quizContainer.appendChild(q);
+  });
+}
+renderQuiz();
 
-    // Render quiz
-    function renderQuiz(){
-      quizContainer.innerHTML = '';
-      QUESTIONS.forEach((item, idx) => {
-        const qWrap = document.createElement('div');
-        qWrap.className = 'question card';
-        qWrap.id = 'q-' + idx;
-
-        // header
-        const head = document.createElement('div');
-        head.className = 'qhead';
-        head.innerHTML = `<div class="qnum">Q${idx+1}</div><div class="small">Worth: KES ${POINTS_PER_CORRECT}</div>`;
-        qWrap.appendChild(head);
-
-        // text
-        const text = document.createElement('div');
-        text.className = 'qtext';
-        text.innerHTML = '<div style="font-weight:600;">' + escapeHtml(item.q) + '</div>';
-        qWrap.appendChild(text);
-
-        // options
-        const optWrap = document.createElement('div');
-        optWrap.className = 'options';
-        item.options.forEach((opt, oi) => {
-          const id = `q${idx}_opt${oi}`;
-          const label = document.createElement('label');
-          label.className = 'option';
-          label.setAttribute('for', id);
-          label.innerHTML = `<input type="radio" name="q${idx}" id="${id}" value="${oi}" /> <div>${escapeHtml(opt)}</div>`;
-          optWrap.appendChild(label);
-        });
-        qWrap.appendChild(optWrap);
-
-        quizContainer.appendChild(qWrap);
-      });
-      // focus top
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    // Escape helper
-    function escapeHtml(text){
-      return text.replace(/[&<>"']/g, function(m){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[m]; });
-    }
-
-    // Grade quiz
-    function gradeQuiz(){
-      // Collect user answers
-      let correctCount = 0;
-      let unanswered = 0;
-      const perQuestion = []; // objects {selectedIndex, correctIndex, isCorrect}
-
-      for(let i=0;i<TOTAL_QUESTIONS;i++){
-        const radios = document.getElementsByName('q' + i);
-        let sel = -1;
-        for(const r of radios){
-          if(r.checked){ sel = Number(r.value); break; }
-        }
-        if(sel === -1) unanswered++;
-        const correctIndex = QUESTIONS[i].correct;
-        const isCorrect = sel === correctIndex;
-        if(isCorrect) correctCount++;
-        perQuestion.push({ selectedIndex: sel, correctIndex, isCorrect });
-      }
-
-      // Calculate scores
-      const totalScore = correctCount * POINTS_PER_CORRECT;
-      const passed = correctCount >= PASS_COUNT;
-      // Build result UI
-      resultArea.style.display = 'block';
-      resultArea.innerHTML = ''; // reset
-
-      const scoreBox = document.createElement('div');
-      scoreBox.className = 'scoreBox';
-      scoreBox.innerHTML = `
-        <div class="scoreNum">${totalScore} KES</div>
-        <div>
-          <div style="font-weight:700">${correctCount} / ${TOTAL_QUESTIONS} correct</div>
-          <div class="small">Passing requires ${PASS_COUNT} correct (${PASS_PERCENT}%) — i.e. ${POINTS_TO_PASS} KES</div>
-        </div>
-      `;
-      resultArea.appendChild(scoreBox);
-
-      const status = document.createElement('div');
-      status.style.marginTop = '10px';
-      if(passed){
-        status.innerHTML = `<div style="color:green;font-weight:800">Congratulations — you passed!</div>`;
-      } else {
-        status.innerHTML = `<div style="color:#b02626;font-weight:800">You did not reach the passing score. Correct answers are shown below.</div>`;
-      }
-      resultArea.appendChild(status);
-
-      if(unanswered > 0){
-        const u = document.createElement('div');
-        u.className = 'small';
-        u.style.marginTop = '8px';
-        u.textContent = `Unanswered questions: ${unanswered}. Please answer all questions for full evaluation.`;
-        resultArea.appendChild(u);
-      }
-
-      // If failed, reveal correct answers for each question (and mark right/wrong always for clarity)
-      // The user requested: "when user submit answers if failed show correct answer for each."
-      // We'll reveal correct answers for every question only if failed; if passed, we still highlight correct/wrong but do not auto-reveal answers textually.
-      QUESTIONS.forEach((item, idx) => {
-        const qdiv = document.getElementById('q-' + idx);
-        qdiv.classList.remove('correct','wrong');
-        // apply visual marking
-        const info = perQuestion[idx];
-        if(info.isCorrect){
-          qdiv.classList.add('correct');
-        } else {
-          qdiv.classList.add('wrong');
-        }
-
-        // Remove any previous markers
-        const existingNote = qdiv.querySelector('.reveal');
-        if(existingNote) existingNote.remove();
-
-        if(!passed){
-          // show correct answer text
-          const note = document.createElement('div');
-          note.className = 'reveal';
-          note.innerHTML = `<span class="answerKey">Correct answer:</span> ${escapeHtml(item.options[item.correct])}`;
-          qdiv.appendChild(note);
-        } else {
-          // when passed, show subtle confirmation under each question (optional)
-          const note = document.createElement('div');
-          note.className = 'reveal';
-          note.style.opacity = '0.9';
-          if(info.isCorrect){
-            note.textContent = 'You answered correctly.';
-          } else {
-            note.textContent = 'Incorrect — review later.';
-            // but do not display the correct option explicitly when passed (to stick to "only show when failed")
-          }
-          qdiv.appendChild(note);
-        }
-      });
-
-      // Scroll to results
-      resultArea.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-
-    // Reset / start over
-    function resetQuiz(){
-      // Clear all radio selections
-      for(let i=0;i<TOTAL_QUESTIONS;i++){
-        const radios = document.getElementsByName('q' + i);
-        for(const r of radios) r.checked = false;
-        const qdiv = document.getElementById('q-' + i);
-        if(qdiv){ qdiv.classList.remove('correct','wrong'); 
-                  const note = qdiv.querySelector('.reveal'); if(note) note.remove(); }
-      }
-      resultArea.style.display = 'none';
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    // Attach events
-    submitBtn.addEventListener('click', () => {
-      gradeQuiz();
-    });
-    resetBtn.addEventListener('click', () => {
-      if(confirm('Reset all answers and start over?')) resetQuiz();
-    });
-
-    // Initial render
-    renderQuiz();
-
-    // Keyboard accessibility: allow submit with Ctrl+Enter
-    document.addEventListener('keydown', (e) => {
-      if(e.ctrlKey && e.key === 'Enter'){
-        gradeQuiz();
-      }
-    });
-
-    // Expose helper for debugging if needed
-    window.quizInfo = { TOTAL_QUESTIONS, POINTS_PER_CORRECT, TOTAL_POINTS, PASS_COUNT, POINTS_TO_PASS, PASS_PERCENT };
-
-  </script>
-  <script>
-  /*************************************************************************
-   * Single-file Frontend Quiz App (with certificate link when passed)
-   *************************************************************************/
-
-  const POINTS_PER_CORRECT = 5;
-  const PASS_PERCENT = 60;
-  const QUESTIONS = [ /* (your 50 questions remain unchanged) */ ];
-
-  const TOTAL_QUESTIONS = QUESTIONS.length;
-  const TOTAL_POINTS = POINTS_PER_CORRECT * TOTAL_QUESTIONS;
-  const PASS_COUNT = Math.ceil(TOTAL_QUESTIONS * PASS_PERCENT / 100);
-  const POINTS_TO_PASS = PASS_COUNT * POINTS_PER_CORRECT;
-
-  const quizContainer = document.getElementById('quizContainer');
-  const totalPointsSpan = document.getElementById('totalPoints');
-  const passPercentSpan = document.getElementById('passPercent');
-  const submitBtn = document.getElementById('submitBtn');
-  const resetBtn = document.getElementById('resetBtn');
-  const resultArea = document.getElementById('resultArea');
-
-  totalPointsSpan.textContent = TOTAL_POINTS.toString();
-  passPercentSpan.textContent = PASS_PERCENT + '%';
-
-  function renderQuiz(){
-    quizContainer.innerHTML = '';
-    QUESTIONS.forEach((item, idx) => {
-      const qWrap = document.createElement('div');
-      qWrap.className = 'question card';
-      qWrap.id = 'q-' + idx;
-
-      const head = document.createElement('div');
-      head.className = 'qhead';
-      head.innerHTML = `<div class="qnum">Q${idx+1}</div><div class="small">Worth: KES ${POINTS_PER_CORRECT}</div>`;
-      qWrap.appendChild(head);
-
-      const text = document.createElement('div');
-      text.className = 'qtext';
-      text.innerHTML = '<div style="font-weight:600;">' + escapeHtml(item.q) + '</div>';
-      qWrap.appendChild(text);
-
-      const optWrap = document.createElement('div');
-      optWrap.className = 'options';
-      item.options.forEach((opt, oi) => {
-        const id = `q${idx}_opt${oi}`;
-        const label = document.createElement('label');
-        label.className = 'option';
-        label.setAttribute('for', id);
-        label.innerHTML = `<input type="radio" name="q${idx}" id="${id}" value="${oi}" /> <div>${escapeHtml(opt)}</div>`;
-        optWrap.appendChild(label);
-      });
-      qWrap.appendChild(optWrap);
-      quizContainer.appendChild(qWrap);
-    });
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+function gradeQuiz(){
+  let correct=0, unanswered=0;
+  const details=[];
+  for(let i=0;i<TOTAL_QUESTIONS;i++){
+    const radios=document.getElementsByName("q"+i);
+    let sel=-1;
+    for(const r of radios) if(r.checked){sel=+r.value;break;}
+    if(sel===-1)unanswered++;
+    const isCorrect=sel===QUESTIONS[i].correct;
+    if(isCorrect)correct++;
+    details.push({sel,isCorrect});
   }
-
-  function escapeHtml(text){
-    return text.replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  const passed=correct>=PASS_COUNT;
+  const score=correct*POINTS_PER_CORRECT;
+  resultArea.style.display="block";
+  resultArea.innerHTML=`
+    <div class="scoreBox">
+      <div class="scoreNum">${score} KES</div>
+      <div><div style="font-weight:700">${correct}/${TOTAL_QUESTIONS} correct</div>
+      <div class="small">Need ${PASS_COUNT} correct (${PASS_PERCENT}%) = ${POINTS_TO_PASS} KES</div></div>
+    </div>
+    <div style="margin-top:10px;color:${passed?"green":"#b02626"};font-weight:800">
+      ${passed?"🎉 Congratulations — you passed!":"❌ You did not reach the passing score."}
+    </div>`;
+  if(unanswered>0)resultArea.innerHTML+=`<div class="small" style="margin-top:8px">Unanswered: ${unanswered}</div>`;
+  QUESTIONS.forEach((q,i)=>{
+    const div=document.getElementById("q-"+i);
+    div.classList.remove("correct","wrong");
+    div.classList.add(details[i].isCorrect?"correct":"wrong");
+    div.querySelectorAll(".reveal").forEach(r=>r.remove());
+    const note=document.createElement("div");note.className="reveal";
+    note.innerHTML=passed?(details[i].isCorrect?"You answered correctly.":"Incorrect — review later."):
+      `<span class="answerKey">Correct answer:</span> ${escapeHtml(q.options[q.correct])}`;
+    div.appendChild(note);
+  });
+  if(unanswered===0&&passed){
+    const btn=document.createElement("button");
+    btn.textContent="🎓 Get Certificate";
+    btn.style.marginTop="16px";btn.style.background="#009245";
+    btn.onclick=()=>window.location.href="https://villankenya-bit.github.io/Certificate";
+    resultArea.appendChild(btn);
   }
+  resultArea.scrollIntoView({behavior:"smooth"});
+}
 
-  function gradeQuiz(){
-    let correctCount = 0;
-    let unanswered = 0;
-    const perQuestion = [];
+function resetQuiz(){
+  document.querySelectorAll("input[type=radio]").forEach(r=>r.checked=false);
+  document.querySelectorAll(".question").forEach(q=>{
+    q.classList.remove("correct","wrong");
+    q.querySelectorAll(".reveal").forEach(r=>r.remove());
+  });
+  resultArea.style.display="none";
+  window.scrollTo({top:0,behavior:"smooth"});
+}
 
-    for(let i=0;i<TOTAL_QUESTIONS;i++){
-      const radios = document.getElementsByName('q' + i);
-      let sel = -1;
-      for(const r of radios){ if(r.checked){ sel = Number(r.value); break; } }
-      if(sel === -1) unanswered++;
-      const correctIndex = QUESTIONS[i].correct;
-      const isCorrect = sel === correctIndex;
-      if(isCorrect) correctCount++;
-      perQuestion.push({ selectedIndex: sel, correctIndex, isCorrect });
-    }
-
-    const totalScore = correctCount * POINTS_PER_CORRECT;
-    const passed = correctCount >= PASS_COUNT;
-
-    resultArea.style.display = 'block';
-    resultArea.innerHTML = '';
-
-    const scoreBox = document.createElement('div');
-    scoreBox.className = 'scoreBox';
-    scoreBox.innerHTML = `
-      <div class="scoreNum">${totalScore} KES</div>
-      <div>
-        <div style="font-weight:700">${correctCount} / ${TOTAL_QUESTIONS} correct</div>
-        <div class="small">Passing requires ${PASS_COUNT} correct (${PASS_PERCENT}%) — ${POINTS_TO_PASS} KES</div>
-      </div>`;
-    resultArea.appendChild(scoreBox);
-
-    const status = document.createElement('div');
-    status.style.marginTop = '10px';
-    if(passed){
-      status.innerHTML = `<div style="color:green;font-weight:800">🎉 Congratulations — you passed!</div>`;
-    } else {
-      status.innerHTML = `<div style="color:#b02626;font-weight:800">❌ You did not reach the passing score.</div>`;
-    }
-    resultArea.appendChild(status);
-
-    if(unanswered > 0){
-      const u = document.createElement('div');
-      u.className = 'small';
-      u.style.marginTop = '8px';
-      u.textContent = `Unanswered questions: ${unanswered}.`;
-      resultArea.appendChild(u);
-    }
-
-    QUESTIONS.forEach((item, idx) => {
-      const qdiv = document.getElementById('q-' + idx);
-      qdiv.classList.remove('correct','wrong');
-      const info = perQuestion[idx];
-      if(info.isCorrect){ qdiv.classList.add('correct'); }
-      else { qdiv.classList.add('wrong'); }
-
-      const existingNote = qdiv.querySelector('.reveal');
-      if(existingNote) existingNote.remove();
-
-      const note = document.createElement('div');
-      note.className = 'reveal';
-      if(passed){
-        note.textContent = info.isCorrect ? 'You answered correctly.' : 'Incorrect — review later.';
-      } else {
-        note.innerHTML = `<span class="answerKey">Correct answer:</span> ${escapeHtml(item.options[item.correct])}`;
-      }
-      qdiv.appendChild(note);
-    });
-
-    // ✅ If user answered all questions and passed, show certificate button
-    if(unanswered === 0 && passed){
-      const certBtn = document.createElement('button');
-      certBtn.textContent = '🎓 Get Certificate';
-      certBtn.style.marginTop = '16px';
-      certBtn.style.background = '#009245';
-      certBtn.onclick = () => window.location.href = 'https://villankenya-bit.github.io/Certificate';
-      resultArea.appendChild(certBtn);
-    }
-
-    resultArea.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  }
-
-  function resetQuiz(){
-    for(let i=0;i<TOTAL_QUESTIONS;i++){
-      const radios = document.getElementsByName('q' + i);
-      for(const r of radios) r.checked = false;
-      const qdiv = document.getElementById('q-' + i);
-      if(qdiv){ qdiv.classList.remove('correct','wrong'); 
-        const note = qdiv.querySelector('.reveal'); if(note) note.remove(); }
-    }
-    resultArea.style.display = 'none';
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-
-  submitBtn.addEventListener('click', gradeQuiz);
-  resetBtn.addEventListener('click', () => { if(confirm('Reset all answers and start over?')) resetQuiz(); });
-  document.addEventListener('keydown', e => { if(e.ctrlKey && e.key === 'Enter') gradeQuiz(); });
-
-  renderQuiz();
-  window.quizInfo = { TOTAL_QUESTIONS, POINTS_PER_CORRECT, TOTAL_POINTS, PASS_COUNT, POINTS_TO_PASS, PASS_PERCENT };
+submitBtn.onclick=gradeQuiz;
+resetBtn.onclick=()=>confirm("Reset quiz?")&&resetQuiz();
+document.addEventListener("keydown",e=>{if(e.ctrlKey&&e.key==="Enter")gradeQuiz();});
 </script>
-
 </body>
 </html>
